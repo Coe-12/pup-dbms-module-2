@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+  <body>
+  	<h1>Edit Information</h1>
+    <form action="/student/edit/{{student.key.id()}}" method="post">
+      Name: <input type="text" name="newFirstName" value= "{{student.first_name}}"></input> <br>
+      Last Name: <input type="text" name="newLastName" value = "{{student.last_name}}"></input> <br>
+      Age: <input type="number" name="newAge" value = "{{student.age}}" ></input> <br>
+      <input type="submit" class="btn" value="Submit">
+ 	 </form>
+  </body>
+</html>
